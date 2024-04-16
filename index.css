@@ -28,3 +28,6 @@ body{
   .button-container {
     display: flex;
   }
+  h1 {
+    text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc;
+  }
