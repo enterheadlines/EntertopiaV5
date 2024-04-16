@@ -25,7 +25,7 @@ body{
     color: lightblue;
     text-decoration: none;
   }
-  .button {
+  #button {
     font-family: 'PT Mono', monospace;
     padding: 15px 30px;
     font-size: 18px;
