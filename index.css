@@ -25,4 +25,6 @@ body{
     color: lightblue;
     text-decoration: none;
   }
-  
+  .button-container {
+    display: flex;
+  }
