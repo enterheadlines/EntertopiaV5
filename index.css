@@ -26,10 +26,7 @@ body{
     text-decoration: none;
   }
   .button-container {
-    text-align: center;
-    margin: 20px 10px;
-    width: calc(100% / 3 - 20px);
-    box-sizing: border-box;
+  
   }
   h1 {
     text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc;
@@ -42,3 +39,13 @@ body{
     flex-direction: column;
     align-items: center;
  }
+ .row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 0%;
+  padding: 5px;
+  margin: 0px;
+}
