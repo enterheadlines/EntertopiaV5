@@ -26,7 +26,10 @@ body{
     text-decoration: none;
   }
   .button-container {
-    display: flex;
+    text-align: center;
+    margin: 20px 10px;
+    width: calc(100% / 3 - 20px);
+    box-sizing: border-box;
   }
   h1 {
     text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc;
