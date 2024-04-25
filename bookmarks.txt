@@ -1,0 +1,16 @@
+AutoClicker
+javascript:var DELAY = 1;var autoClickerStyleElement = document.createElement('style'); autoClickerStyleElement.innerHTML='*{cursor: crosshair !important;}'; document.body.appendChild(autoClickerStyleElement); function addClicker(e){if(!e.isTrusted){return;} if(e.target.classList.contains('auto-clicker-target')){ e.target.classList.remove('auto-clicker-target'); }else{ e.target.classList.add('auto-clicker-target'); } document.body.removeChild(autoClickerStyleElement); document.body.removeEventListener('click', addClicker); e.preventDefault(); autoClick(e.target); } function autoClick(element){ if(element.classList.contains('auto-clicker-target')){ element.click(); setTimeout(function(){autoClick(element);}, DELAY); } } document.body.addEventListener('click', addClicker, 0);
+Dark Mode
+javascript:document.querySelectorAll('*').forEach(e=>e.setAttribute('style','background-color:#222;background-image:none;color:#'+(/^A|BU/.test(e.tagName)?'36c;text-decoration:underline;':'eee;')+e.getAttribute('style')))
+History Flooder
+javascript:var num=prompt("History flood number:");done=false;x=window.location.href;for (var i=1; i<=num; i++){history.pushState(0, 0, i==num?x:i.toString());if(i==num){done=true}}if(done===true){alert("History flood Succeeded "+window.location.href+" "+num+(num==1?" time.":" times. (Coolio)"))}
+Rainbow Screen (and shrek cursor)
+javascript:var $jscomp=$jscomp||{};$jscomp.scope={};$jscomp.createTemplateTagFirstArg=function(a){return a.raw=a};$jscomp.createTemplateTagFirstArgWithRaw=function(a,b){a.raw=b;return a};var incrementingNum=0,colors="red orange yellow green blue purple pink".split(" ");setInterval(function(){6<=incrementingNum?incrementingNum=0:incrementingNum++;for(var a=document.querySelectorAll("div"),b=0;b
+Edpuzzle Answers
+javascript: fetch("https://cdn.jsdelivr.net/gh/ading2210/edpuzzle-answers@latest/script.js").then(r => r.text()).then(r => eval(r))
+Mouse Light (laggy)
+javascript:krazete:var style=document.createElement("style"),canvas=(document.body.appendChild(style),document.createElement("canvas")),context=(canvas.id="canvas",document.body.appendChild(canvas),canvas.getContext("2d"));function outlineBounds(){context.clearRect(0,0,window.innerWidth,window.innerHeight),context.beginPath(),Array.from(document.querySelectorAll("*")).map(function(t){return t.getBoundingClientRect()}).filter(function(t){var n=window.scrollY
+Tab Cloaker
+javascript:(function() {var l = document.querySelector("link[rel*='icon']") || document.createElement('link');l.type = 'image/x-icon';l.rel = 'shortcut icon';l.href = 'https://user-images.githubusercontent.com/130446887/236898756-c8e32bc6-6a26-4f57-bfcb-5e054b62021e.png';document.getElementsByTagName('head')[0].appendChild(l);document.title = 'Google Docs';})();
+ingot extension remover 
+javascript:(function () {var a = document.createElement('script');a.src = 'https://cdn.jsdelivr.net/gh/FogNetwork/Ingot/ingot.min.js';document.body.appendChild(a);}())
