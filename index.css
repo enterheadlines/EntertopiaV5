@@ -4,6 +4,9 @@ body{
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
   a:link {
