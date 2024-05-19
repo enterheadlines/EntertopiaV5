@@ -64,11 +64,11 @@ body{
 button{
   color: white;
 }
-.button {
+button {
   font-family: 'PT Mono', monospace;
   padding: 15px 30px;
   font-size: 18px;
-background-color: #4628dd;
+background-color: #9a53d4;
 color: #ffffff;
 border: none;
 border-radius: 10px;
@@ -86,4 +86,14 @@ margin-bottom: 10px;
 .button:hover {
 background-color: #8B008B;
 transform: scale(1.1);
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
 }
