@@ -8,6 +8,7 @@ body{
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     font-family: "Press Start 2P";
+    color: white;
 }
 
   a:link {
