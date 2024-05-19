@@ -9,6 +9,7 @@ body{
     animation-fill-mode: forwards;
     font-family: "Press Start 2P";
     color: white;
+    font-family: "Press Start 2P";
 }
 
   a:link {
@@ -63,4 +64,27 @@ body{
 }
 button{
   color: white;
+}
+.button {
+  font-family: 'PT Mono', monospace;
+  padding: 15px 30px;
+  font-size: 18px;
+background-color: #4628dd;
+color: #ffffff;
+border: none;
+border-radius: 10px;
+cursor: pointer;
+transition: background-color 0.3s, transform 0.3s;
+font-weight: bold;
+letter-spacing: 1px;
+text-transform: uppercase;
+box-shadow: 0 0 10px rgba(235, 8, 247, 0.5);
+text-decoration: none;
+display: block;
+margin: 0 auto;
+margin-bottom: 10px;
+}
+.button:hover {
+background-color: #8B008B;
+transform: scale(1.1);
 }
