@@ -1,5 +1,5 @@
 body{
-  background: linear-gradient(to right, #2fb3eb, #6749fe);
+  background: linear-gradient(to right, #aa22ff, #362395);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -32,10 +32,10 @@ body{
   }
   
   h1 {
-    text-shadow:1px 1px 10px #000000, 1px 1px 10px #ccc;
+    text-shadow:1px 1px 10px #ffffff, 1px 1px 10px #ffffff;
   }
   h2 {
-    text-shadow:1px 1px 10px #000000, 1px 1px 10px #ccc;
+    text-shadow:1px 1px 10px #ffffff, 1px 1px 10px #ffffff;
   }
   
   .container {
@@ -60,4 +60,7 @@ body{
     height: 12px;
     background: rgb(0, 0, 0);
     margin-bottom: 50px;
+}
+button{
+  color: white;
 }
