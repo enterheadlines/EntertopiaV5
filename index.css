@@ -1,5 +1,5 @@
 body{
-  background: linear-gradient(to right, #7b00ff, #cd17ff);
+  background: linear-gradient(to right, #7b00ff, #d981f1);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -62,7 +62,7 @@ button {
   font-family: "Press Start 2P";
   padding: 15px 30px;
   font-size: 18px;
-background-color: #994ada;
+background-color: #c993f6;
 color: #ffffff;
 border: none;
 border-radius: 10px;
