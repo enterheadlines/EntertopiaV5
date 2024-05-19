@@ -5,27 +5,40 @@
       <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&family=Press+Start+2P&family=Trade+Winds&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="index.css">
         <style>
-        
+        button {
+  font-family: "Press Start 2P";
+  padding: 15px 30px;
+  font-size: 18px;
+background-color: #c993f6;
+color: #ffffff;
+border: none;
+border-radius: 10px;
+cursor: pointer;
+transition: background-color 0.3s, transform 0.3s;
+font-weight: bold;
+letter-spacing: 1px;
+text-transform: uppercase;
+box-shadow: 0 0 10px rgba(235, 8, 247, 0.5);
+text-decoration: none;
+display: block;
+margin: 0 auto;
+margin-bottom: 10px;
+}
+.button:hover {
+background-color: #8B008B;
+transform: scale(1.1);
+}
 
-  a:link {
-    color: lightblue;
-    text-decoration: none;
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
   }
-  
-  a:visited {
-    color: lightblue;
-    text-decoration: none;
+
+  100% {
+      opacity: 1;
   }
-  
-  a:hover {
-    color: lightblue;
-    text-decoration: none;
-  }
-  
-  a:active {
-    color: lightblue;
-    text-decoration: none;
-  }
+}
+
   
   h1 {
     text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc;
