@@ -1,0 +1,93 @@
+body{
+    background: linear-gradient(to right, #7b00ff, #d981f1);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      animation: fadeInAnimation ease 1s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      font-family: "Press Start 2P";
+      color: white;
+      font-family: "Press Start 2P";
+  }
+  
+    a:link {
+      color: lightblue;
+      text-decoration: none;
+    }
+    
+    a:visited {
+      color: lightblue;
+      text-decoration: none;
+    }
+    
+    a:hover {
+      color: lightblue;
+      text-decoration: none;
+    }
+    
+    a:active {
+      color: lightblue;
+      text-decoration: none;
+    }
+    
+     
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   .row {
+    display: flex;
+  }
+  
+  /* Create three equal columns that sits next to each other */
+  .column {
+    flex: 0%;
+    padding: 5px;
+    margin: 0px;
+  }
+    hr {
+      position: relative;
+      top: 20px;
+      border: none;
+      height: 12px;
+      background: rgb(0, 0, 0);
+      margin-bottom: 50px;
+  }
+  button{
+    color: white;
+  }
+  button {
+    font-family: "Press Start 2P";
+    padding: 15px 30px;
+    font-size: 18px;
+  background-color: #c993f6;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px rgba(235, 8, 247, 0.5);
+  text-decoration: none;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  }
+  .button:hover {
+  background-color: #8B008B;
+  transform: scale(1.1);
+  }
+  
+  @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+  
+    100% {
+        opacity: 1;
+    }
+  }
