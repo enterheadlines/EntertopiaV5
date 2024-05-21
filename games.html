@@ -17,6 +17,26 @@
     <body>
  <ul>
 <span><a href="index.html"><button class="button">Home</button></a></span>
+<script>
+    function search() {
+const input = document.getElementById("input").value.toLowerCase();
+const docks = document.getElementsByClassName("dock");
+for (let i = 0; i < docks.length; i++) {
+    const div = docks[i].getElementsByTagName("div")[0];
+    // Check if the div exists and if its inner text includes the input string
+    if (div && div.innerText.toLowerCase().includes(input)) {
+        docks[i].style.display = ""; // Show elements that match
+    } else {
+        docks[i].style.display = "none"; // Hide elements that don't match
+    }
+}
+}
+
+</script>
+<center style="position: relative;">
+                <h2>Apps</h2>
+                <input style="width: 70%; background-color: #141313; border-radius: 5px; border-style: none; padding: 5px 10px; color: #fff" id="input" type="text" oninput="search()"  placeholder="Search">
+            </center>
 <center><h1>gnhustgames</h1></center>
 <div class="container">
 <p>
