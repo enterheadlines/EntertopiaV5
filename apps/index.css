@@ -73,8 +73,8 @@ body{
   text-transform: uppercase;
   box-shadow: 0 0 10px rgba(235, 8, 247, 0.5);
   text-decoration: none;
-  display: block;
-  margin: 0 auto;
+  display: inline;
+  margin: 50%;
   margin-bottom: 10px;
   }
   .button:hover {
