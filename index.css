@@ -5,8 +5,6 @@ body{
 	height: 100vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
-    animation: fadeInAnimation ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     font-family: "Press Start 2P";
