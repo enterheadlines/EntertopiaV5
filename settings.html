@@ -16,23 +16,38 @@
         <div class="column">
             <center><a href="index.html"><button class="button">Home</button></a></div></center>
             </div>
+            <h1>Background</h1>
            <form>
             <label for="radio">
           Default      </label>
-                <input type="radio" name="radio">
+                <input type="radio" name="radio" onclick=" " value="r"><br>
            
             <label for="radio">
            Sky blue     </label>
-                <input type="radio" name="radio">
+                <input type="radio" name="radio" onclick=" " value="b"><br>
            
             <label for="radio">
           Night      </label>
-                <input type="radio" name="radio">
-            
+                <input type="radio" name="radio" onclick=" " value="p"><br>           
            </form>
+          <h1>more stuff coming soon</h1>
 
-
-
+           <script>
+var cols = {
+  "r":"#FF0000",
+  "b":"#0000FF",
+  "p":"#FF00FF"
+} // no comma after the last
+window.onload=function() { // when the page loads
+  var rads = document.getElementsByName("music"); // all rads named music
+  for (var i=0;i<rads.length;i++) {
+    rads[i].onclick=function() {
+      var col = cols[this.value];
+      document.body.style.backgroundColor=col;
+    }
+  }
+}
+           </script>
             <script async src="https://www.googletagmanager.com/gtag/js?id=G-36EM66LHER"></script>
             <script>
               window.dataLayer = window.dataLayer || [];
