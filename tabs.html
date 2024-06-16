@@ -1,14 +1,22 @@
+
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>tabs</title>
-        <meta name="description" content="This is the best service for your needs">
-        <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&family=Press+Start+2P&family=Trade+Winds&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="index.css">
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Axiom</title>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="/apps/assets/scripts/global.css">
+<script src="/apps/assets/scripts/global.js"></script>
 
-        <style>
-        .tab-container {
+<style>
+    body, html {
+        height: 100%;
+        margin: 0;
+    }
+    
+    .tab-container {
         width: 100%;
         height: calc(100% - 70px); /* Adjusted height to account for the top nav bar */
         position: fixed;
@@ -66,16 +74,273 @@
         background-color: #333232;
         cursor: pointer;
     }
+    body {
+    background-color: #171717;
+    font-family: 'Lexend', sans-serif;
+    color: white;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.icon-nav {
+    width: 40px;
+}
+
+.glitch-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+ }
  
+ .glitch {
+    top: 40%;
+    font-weight: bold;
+    color: #FFFFFF;
+    letter-spacing: 3px;
+    z-index: 1;
+ }
+ 
+ .glitch:before,
+ .glitch:after {
+    display: block;
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+ }
+ 
+ .glitch:before {
+    animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+    color: #00FFFF;
+    z-index: -1;
+ }
+ 
+ .glitch:after {
+    animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+    color: #FF00FF;
+    z-index: -2;
+ }
+ 
+ @keyframes glitch-it {
+    0% {
+       transform: translate(0);
+    }
+    20% {
+       transform: translate(-2px, 2px);
+    }
+    40% {
+       transform: translate(-2px, -2px);
+    }
+    60% {
+       transform: translate(2px, 2px);
+    }
+    80% {
+       transform: translate(2px, -2px);
+    }
+    to {
+       transform: translate(0);
+    }
+ }
+  
+.logo_large {
+    width: 50%;
+    height: 50%;
+    position: fixed;
+    z-index: -1;
+    top: 50%;      
+    left: 50%;
+}
+.star {
+    position: absolute;
+    background: #fff4f4;
+    z-index: -9999;
+    border-radius: 50%;
+    animation: twinkling linear infinite;
+  }
+
+  @keyframes twinkling {
+    0% {
+        /* rotate star twinkling yes zoom in out yes true factual */
+        transform: scale(0.5) rotate(0deg);
+    }
+    100% {
+        transform: scale(1) rotate(360deg);
+    }
+  }
+  @keyframes shooting-star {
+    0% {
+
+    }
+    50% {
+        left: 50%;
+        top: 50%;
+    }
+    100% {
+        top: 0px;
+        left: 100%;
+    }
+  }
+.alert {
+    color: red;
+    border-color: red;
+    border-style: solid;
+    width: min-content;
+    padding: 5px 10px;
+}
+.dock {
+    border-style: solid;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.dock button {
+    color: white;
+    border-color: azure;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.input {
+    border-color: azure;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+#logo {
+    text-align: center;
+
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+nav {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+nav ul li a:hover {
+    color: #00FF00;
+}
+.content {
+    margin-top: 60px; /* Adjust margin top to make space for the fixed navbar */
+}
+.logo {
+    width: 100px;
+    height: 100px;
+    left: 10px;
+}
 
 
-        </style>
-    </head>
-    <body>
-        <div class="column">
-            <center><a href="index.html"><button class="button">Home</button></a></div></center>
-            </div>
-             <nav>
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+
+</style>
+<script>
+    $(document).ready(function() {
+        // click on new tab button instantly
+        $('#new-tab').trigger('click');
+    $('.tabs').on('click', 'a', function(e) {
+        e.preventDefault();
+        var $tab = $(this).closest('li');
+        var index = $tab.index();
+        $('.tab-pane').removeClass('active').eq(index).addClass('active');
+    });
+
+    $('.tabs').on('click', '.delete-tab', function() {
+        var $tab = $(this).closest('li');
+        var index = $tab.index();
+        $('.tab-pane').eq(index).remove();
+        $tab.remove();
+        // Adjust the active tab if necessary
+        if ($('.tabs li.active').index() === index) {
+            $('.tabs li').eq(index - 1).addClass('active');
+            $('.tab-pane').eq(index - 1).addClass('active');
+        }
+    });
+
+    $('.add-tab').on('click', function() {
+        var $tabs = $('.tabs');
+        var $tabContent = $('.tab-content');
+
+        var tabIndex = $tabs.find('li').length + 1;
+        var tabTitle = 'Glitch ' + tabIndex;
+        var randomURL = "main.html";
+        $tabs.find('li:last-child').before('<li><a>' + tabTitle + '</a><button class="delete-tab">X</button></li>');
+        $tabContent.append('<div class="tab-pane"><iframe id="iframe" src="' + randomURL + '" frameborder="0"></iframe></div>');;
+    });
+
+    $('.add-tab-browse').on('click', function() {
+    var $tabs = $('.tabs');
+    var $tabContent = $('.tab-content');
+
+    var tabIndex = $tabs.find('li').length + 1;
+    var tabTitle = 'Tab ' + tabIndex;
+    var randomURL = "new.html";
+
+    $tabs.find('li:last-child').before('<li><a class="tab-title">' + tabTitle + '</a><button class="delete-tab">X</button></li>');
+    $tabContent.append('<div class="tab-pane"><iframe class="tab-iframe" src="' + randomURL + '" frameborder="0"></iframe></div>');
+
+    var $newTabTitle = $('.tab-title').last();
+    var $newIFrame = $('.tab-iframe').last();
+
+    setInterval(function(){
+        $newTabTitle.text($newIFrame.contents().find('title').text());
+    }, 1000);
+});
+
+});
+
+
+
+</script>
+</head>
+<body>
+    <nav>
         <img src="axiom.png" class="icon-nav" style="width: 40px; height: 40px; left: 10px; position: fixed; top: 10px;">
           <ul>
               <li><a href="main.html">Home</a></li>
@@ -102,73 +367,5 @@
 
 
 
-
-
-            <script async src="https://www.googletagmanager.com/gtag/js?id=G-36EM66LHER"></script>
-            <script>
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-            
-              gtag('config', 'G-36EM66LHER');
-            </script>
-               <script>
-                $(document).ready(function() {
-                    // click on new tab button instantly
-                    $('#new-tab').trigger('click');
-                $('.tabs').on('click', 'a', function(e) {
-                    e.preventDefault();
-                    var $tab = $(this).closest('li');
-                    var index = $tab.index();
-                    $('.tab-pane').removeClass('active').eq(index).addClass('active');
-                });
-            
-                $('.tabs').on('click', '.delete-tab', function() {
-                    var $tab = $(this).closest('li');
-                    var index = $tab.index();
-                    $('.tab-pane').eq(index).remove();
-                    $tab.remove();
-                    // Adjust the active tab if necessary
-                    if ($('.tabs li.active').index() === index) {
-                        $('.tabs li').eq(index - 1).addClass('active');
-                        $('.tab-pane').eq(index - 1).addClass('active');
-                    }
-                });
-            
-                $('.add-tab').on('click', function() {
-                    var $tabs = $('.tabs');
-                    var $tabContent = $('.tab-content');
-            
-                    var tabIndex = $tabs.find('li').length + 1;
-                    var tabTitle = 'Infamyunblocked ' + tabIndex;
-                    var randomURL = "https://infamyunblockedv4fr.vercel.app";
-                    $tabs.find('li:last-child').before('<li><a>' + tabTitle + '</a><button class="delete-tab">X</button></li>');
-                    $tabContent.append('<div class="tab-pane"><iframe id="iframe" src="' + randomURL + '" frameborder="0"></iframe></div>');;
-                });
-            
-                $('.add-tab-browse').on('click', function() {
-                var $tabs = $('.tabs');
-                var $tabContent = $('.tab-content');
-            
-                var tabIndex = $tabs.find('li').length + 1;
-                var tabTitle = 'Tab ' + tabIndex;
-                var randomURL = "https://infamyunblockedv4fr.vercel.app";
-            
-                $tabs.find('li:last-child').before('<li><a class="tab-title">' + tabTitle + '</a><button class="delete-tab">X</button></li>');
-                $tabContent.append('<div class="tab-pane"><iframe class="tab-iframe" src="' + randomURL + '" frameborder="0"></iframe></div>');
-            
-                var $newTabTitle = $('.tab-title').last();
-                var $newIFrame = $('.tab-iframe').last();
-            
-                setInterval(function(){
-                    $newTabTitle.text($newIFrame.contents().find('title').text());
-                }, 1000);
-            });
-            
-            });
-            
-            
-</script>            
-        </body>
-           
+</body>
 </html>
