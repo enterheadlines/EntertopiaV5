@@ -8,7 +8,66 @@
 
 
         <style>
-      
+        .tab-container {
+        width: 100%;
+        height: calc(100% - 70px); /* Adjusted height to account for the top nav bar */
+        position: fixed;
+        top: 70px; /* Adjusted top position to account for the top nav bar */
+    }
+
+    .tabs {
+        list-style-type: none;
+        padding: 0;
+        
+        margin: 0;
+        display: flex;
+    }
+
+    .tabs li {
+        margin-right: 10px;
+        display: flex;
+        
+    }
+
+    .tabs li a {
+        padding: 5px 10px;
+        background-color: #333232;
+        text-decoration: none;
+        color: white;
+        background-color: #333232;
+    }
+
+    .tab-content {
+        border: 1px solid #333;
+        padding: 10px;
+        height: calc(100% - 30px); /* Adjusted height to fit the iframe */
+    }
+
+    .tab-pane {
+        display: none;
+        height: 100%; /* Added height to ensure it takes full space */
+    }
+
+    .tab-pane.active {
+        display: block;
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        margin-bottom: 10px;
+    }
+
+    .delete-tab {
+        border: none;
+        background-color: transparent;
+        color: red;
+        background-color: #333232;
+        cursor: pointer;
+    }
+ 
+
 
         </style>
     </head>
@@ -16,7 +75,25 @@
         <div class="column">
             <center><a href="index.html"><button class="button">Home</button></a></div></center>
             </div>
-           
+            <div class="tab-container">
+                <ul class="tabs">
+                    <li><a href="#" id="new-tab">Infamyunblocked</a><button class="delete-tab">X</button></li>
+                    
+                    <li><button class="add-tab" style="background-color: #333232; color: white; border-color: transparent;">I+</button>
+                        <button class="add-tab-browse" style="background-color: #333232; color: white; border-color: transparent;">S+</button>
+                </li>
+                
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane">
+                        <iframe src="https://infamyunblockedv4fr.vercel.app" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+            
+            
+
+
             <script async src="https://www.googletagmanager.com/gtag/js?id=G-36EM66LHER"></script>
             <script>
               window.dataLayer = window.dataLayer || [];
@@ -25,7 +102,63 @@
             
               gtag('config', 'G-36EM66LHER');
             </script>
-               
+               <script>
+                $(document).ready(function() {
+                    // click on new tab button instantly
+                    $('#new-tab').trigger('click');
+                $('.tabs').on('click', 'a', function(e) {
+                    e.preventDefault();
+                    var $tab = $(this).closest('li');
+                    var index = $tab.index();
+                    $('.tab-pane').removeClass('active').eq(index).addClass('active');
+                });
+            
+                $('.tabs').on('click', '.delete-tab', function() {
+                    var $tab = $(this).closest('li');
+                    var index = $tab.index();
+                    $('.tab-pane').eq(index).remove();
+                    $tab.remove();
+                    // Adjust the active tab if necessary
+                    if ($('.tabs li.active').index() === index) {
+                        $('.tabs li').eq(index - 1).addClass('active');
+                        $('.tab-pane').eq(index - 1).addClass('active');
+                    }
+                });
+            
+                $('.add-tab').on('click', function() {
+                    var $tabs = $('.tabs');
+                    var $tabContent = $('.tab-content');
+            
+                    var tabIndex = $tabs.find('li').length + 1;
+                    var tabTitle = 'Infamyunblocked ' + tabIndex;
+                    var randomURL = "https://infamyunblockedv4fr.vercel.app";
+                    $tabs.find('li:last-child').before('<li><a>' + tabTitle + '</a><button class="delete-tab">X</button></li>');
+                    $tabContent.append('<div class="tab-pane"><iframe id="iframe" src="' + randomURL + '" frameborder="0"></iframe></div>');;
+                });
+            
+                $('.add-tab-browse').on('click', function() {
+                var $tabs = $('.tabs');
+                var $tabContent = $('.tab-content');
+            
+                var tabIndex = $tabs.find('li').length + 1;
+                var tabTitle = 'Tab ' + tabIndex;
+                var randomURL = "https://infamyunblockedv4fr.vercel.app";
+            
+                $tabs.find('li:last-child').before('<li><a class="tab-title">' + tabTitle + '</a><button class="delete-tab">X</button></li>');
+                $tabContent.append('<div class="tab-pane"><iframe class="tab-iframe" src="' + randomURL + '" frameborder="0"></iframe></div>');
+            
+                var $newTabTitle = $('.tab-title').last();
+                var $newIFrame = $('.tab-iframe').last();
+            
+                setInterval(function(){
+                    $newTabTitle.text($newIFrame.contents().find('title').text());
+                }, 1000);
+            });
+            
+            });
+            
+            
+</script>            
         </body>
            
 </html>
