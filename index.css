@@ -10,6 +10,7 @@ body{
     font-family: "Press Start 2P";
     color: white;
     font-family: "Press Start 2P";
+    margin: 10px;
 }
 
   a:link {
@@ -32,7 +33,11 @@ body{
     text-decoration: none;
   }
   
-   
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
   
  .row {
   display: flex;
