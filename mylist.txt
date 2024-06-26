@@ -92,3 +92,9 @@ https://infamymainv3-cats.vercel.app/moto.html
 https://infamymainv3-cats.vercel.app/1v1.html
 https://gnhustgames.github.io/x3mmotor/
 
+ background-color: rgb(149, 74, 219);
+  border-radius: 20px;
+  margin: 3px;
+  padding: 7px;
+  width: 600px;
+  margin-left: 25%;
