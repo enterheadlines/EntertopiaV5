@@ -112,3 +112,9 @@ iframe{
 		background-position: 0% 50%;
 	}
 }
+#nav{
+  background-color: rgb(16, 16, 16);
+  border-radius: 20px;
+  margin: 5px;
+  padding: 7px;
+}
