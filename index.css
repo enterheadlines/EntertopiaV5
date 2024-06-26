@@ -113,22 +113,16 @@ iframe{
 	}
 }
 #nav{
-  .topbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    width: 50%;
-    z-index: 200;
-    border-radius: 15px;
-    background: #000000eb;
-    backdrop-filter: saturate(180%) blur(20px);
-    -webkit-backdrop-filter: blur(8px);
-    transition: width .3s ease
+  background-color: rgb(149, 74, 219);
+  border-radius: 20px;
+  margin: 3px;
+  padding: 7px;
+  width: 600px;
+  margin-left: 25%;
 }
 
 
-}
+
 #title{
   margin-top: 15%;
   margin-left: 7px;
