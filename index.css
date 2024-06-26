@@ -117,5 +117,6 @@ iframe{
   border-radius: 20px;
   margin: 5px;
   padding: 7px;
-  width: 300px;
+  width: 600px;
+  margin-left: 45%;
 }
