@@ -65,7 +65,7 @@ button {
   font-family: "Press Start 2P";
   padding: 15px 30px;
   font-size: 18px;
-background-color: #5c476e;
+background-color: #7647c6;
 color: #ffffff;
 border: none;
 border-radius: 10px;
@@ -82,7 +82,7 @@ margin-bottom: 10px;
 
 }
 .button:hover {
-background-color: #7d4c7d;
+background-color: #8e348e;
 transform: scale(1.1);
 }
 
@@ -113,7 +113,7 @@ iframe{
 	}
 }
 #nav{
-  background-color: rgb(16, 16, 16);
+  background-color: rgb(149, 74, 219);
   border-radius: 20px;
   margin: 5px;
   padding: 7px;
