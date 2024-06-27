@@ -11,7 +11,132 @@
         body{
           font-family: "Press Start 2P";
         }
-      
+        .topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    width: 50%;
+    z-index: 200;
+    border-radius: 15px;
+    background: #000000eb;
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: width .3s ease
+}
+
+.topbar form {
+    flex: 1;
+    margin: 0 20px 6px
+}
+
+.topbar a,
+.left-buttons a {
+    color: #e0e0e0;
+    padding: 8px;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 400;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    transition: all .5s ease
+}
+
+
+.topbar a:hover {
+    transform: scale(1.1);
+    background-color: #1f1f1f;
+    border-radius: 5px;
+}
+
+
+.left-buttons,
+.right-section {
+    display: flex
+}
+
+.left-buttons a {
+    margin-right: 10px
+}
+
+.search {
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+    width: 100%;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    transition: .5s;
+    align-items: center;
+    display: flex;
+    flex: 1;
+    flex-direction: column
+}
+
+.nav-btn {
+    position: relative;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none
+}
+
+.nav-btn:hover {
+    background-color: #302f2f
+}
+
+#form {
+    background: none;
+    padding: 0 17px;
+    height: 48px;
+    z-index: 200;
+    box-shadow: 0 1px 3px #00000080;
+    background-color: #0a0a0a;
+    border: 1px solid #3128283b;
+    color: var(--text-color);
+    border-radius: 3px;
+    outline: none;
+    width: 600px;
+    margin-top: 5px;
+    border-radius: 12px;
+    color: #fff;
+    transition: border-radius .1s;
+    display: flex;
+    align-items: center
+}
+
+.topbar form {
+    flex: 1;
+    margin: 0 20px 6px
+}
+
+.submit-button {
+    background: transparent;
+    border: none !important
+}
+
+#align {
+    display: none;
+    z-index: 100000;
+    flex-direction: row;
+    width: 100%;
+    height: 100%
+}
+
+#ifr {
+    border-radius: 15px;
+    width: 100%;
+    height: 90%;
+    min-height: 94vh;
+    display: block;
+    border: 0;
+    border-color: transparent;
+    z-index: 1
+}
         </style>
     </head>
     <body>
