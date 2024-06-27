@@ -1,5 +1,5 @@
 body{
-  background: linear-gradient(-45deg, #67c6d3, #9541d1, #c657da, #c65191);
+  background: linear-gradient(-45deg, #dc76cb, #c99de9, #c657da, #934589);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 	height: 100vh;
@@ -115,7 +115,7 @@ iframe{
 #nav{
   margin-top: 1px;
   margin-left: 17%;
-  background-color: rgb(149, 74, 219);
+  background-color: rgb(174, 0, 255);
   border-radius: 20px;
   padding: 7px;
   width: 800px;
@@ -124,7 +124,7 @@ iframe{
 
 
 #title{
-  background-color: rgb(135, 92, 175);
+  background-color: rgb(140, 117, 162);
   border-radius: 20px;
 }
 #slashest{
