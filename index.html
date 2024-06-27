@@ -165,7 +165,13 @@
             <span><i class="fas fa-th"></i> Apps</span>
          </a>
       </div>
-
+      <form id="form" class="center-form">
+        <input autofocus autocomplete="off" class="search" id="search" placeholder="Search the web or enter a URL"
+           required />
+        <button type="submit" class="submit-button">
+           <i class="fas fa-search searchicon"></i>
+        </button>
+     </form>
      
       <div class="right-section">
          <a id="util" href="/u" class="<%= path === '/u' ? 'nav-active' : 'nav-btn' %>">
