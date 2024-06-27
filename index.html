@@ -11,169 +11,35 @@
         body{
           font-family: "Press Start 2P";
         }
-        body{
-          font-family: "Press Start 2P";
-        }
-        .topbar {
-          font-family: 'Press Start 2p';
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    height: 50px;
-    width: 400px;
-    z-index: 200;
-    border-radius: 15px;
-    background: #8131a0eb;
-    backdrop-filter: saturate(180%) blur(20px);
-    -webkit-backdrop-filter: blur(8px);
-    transition: width .3s ease
- 
-}
-
-.topbar form {
-  font-family: 'Press Start 2p';
-    flex: 1;
-    margin: 0 20px 6px
-}
-
-.topbar a,
-.left-buttons a {
-    color: #e0e0e0;
-    padding: 8px;
-    font-size: 12px;
-    text-decoration: none;
-    font-weight: 400;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    transition: all .5s ease
-}
-
-
-.topbar a:hover {
-    transform: scale(1.1);
-    background-color: #6d2d81;
-    border-radius: 5px;
-}
-
-
-.left-buttons,
-.right-section {
-    display: flex
-}
-
-.left-buttons a {
-    margin-right: 10px
-}
-
-.search {
-  font-family: 'Press Start 2p';
-    border-radius: 5px;
-    outline: none;
-    font-size: 14px;
-    width: 100%;
-    background-color: transparent;
-    color: #fff;
-    border: none;
-    transition: .5s;
-    align-items: center;
-    display: flex;
-    flex: 1;
-    flex-direction: column
-}
-
-.nav-btn {
-    position: relative;
-    border: none;
-    border-radius: 3px;
-    padding: 10px 20px;
-    background-color: transparent;
-    color: #fff;
-    cursor: pointer;
-    text-decoration: none
-}
-
-.nav-btn:hover {
-    background-color: #a550da
-}
-
-#form {
-  font-family: 'Press Start 2p';
-    background: none;
-    padding: 0 17px;
-    height: px;
-    z-index: 200;
-    box-shadow: 0 1px 3px #fbd8d880;
-    background-color: #9f4dc5;
-    border: 1px solid #b163db3b;
-    color: var(--text-color);
-    border-radius: 3px;
-    outline: none;
-    width: 300px;
-    margin-top: 5px;
-    border-radius: 12px;
-    color: #fff;
-    transition: border-radius .1s;
-    display: flex;
-    align-items: center
-    
-}
-
-.topbar form {
-  font-family: 'Press Start 2p';
-    flex: 1;
-    margin: 0 20px 6px
-}
-
-.submit-button {
-    background: transparent;
-    border: none !important
-}
-
-#align {
-    display: none;
-    z-index: 100000;
-    flex-direction: row;
-    width: 100%;
-    height: 100%
-}
-
-#ifr {
-    border-radius: 15px;
-    width: 100%;
-    height: 90%;
-    min-height: 94vh;
-    display: block;
-    border: 0;
-    border-color: transparent;
-    z-index: 1
-}
+  
         </style>
     </head>
     <body>
     <br>
 
-    <div class="topbar">
-      <div class="left-buttons">
-         <a id="exit" onclick="exit()" style="display: none">
-            <span style="font-weight: bold;"><i class="fas fa-sign-out-alt"></i> Exit</span>
-         </a>
-         <a id="homebtn" href="/" class="<%= path === '/' ? 'nav-active' : 'nav-btn' %>">
-            <span><i class="fas fa-home"></i> Home</span>
-         </a>
-         <a id="games" href="/games.html" class="<%= path === '/g' ? 'nav-active' : 'nav-btn' %>">
-            <span><i class="fas fa-gamepad"></i> Games</span>
-         </a>
-         <a id="apps" href="/apps.html" class="<%= path === '/a' ? 'nav-active' : 'nav-btn' %>">
-            <span><i class="fas fa-th"></i> Apps</span>
-         </a>
+    <div class="flex">
+      <div id="nav">
+        <div class="row">
+          <div class="column">
+         <span><a href="index.html"><button class="button">Home</button></a></span>
+          </div>
+          <div class="column">
+            <span><a href="games.html"><button class="button">Games</button></a></span>
+             </div>
+             <div id="title">
+             <h6>infamyunblockedv5</h6>
+             </div>
+             <div class="column">
+              <span><a href="apps.html"><button class="button">Apps</button></a></span>
+               </div>
+               <div class="column">
+                <span><a href="more.html"><button class="button">More</button></a></span>
+                 </div>
+        </div>
       </div>
-      <a id="apps" href="/a" class="<%= path === '/a' ? 'nav-active' : 'nav-btn' %>">
-        <span><i class="fas fa-th"></i> More</span>
-     </a>
-        
-
-
+    </div>
+     
+  
 
 
 
