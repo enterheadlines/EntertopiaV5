@@ -113,13 +113,12 @@ iframe{
 	}
 }
 #nav{
+  margin-top: 1px;
+  margin-left: 17%;
   background-color: rgb(149, 74, 219);
   border-radius: 20px;
-  margin: 3px;
   padding: 7px;
   width: 800px;
-  margin-left: 17%;
-  margin-top: 0px;
 }
 
 
