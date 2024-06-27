@@ -16,30 +16,44 @@
     </head>
     <body>
     <br>
-<div class="flex">
-    <div id="nav">
-      <div class="row">
-        <div class="column">
-       <span><a href="index.html"><button class="button">Home</button></a></span>
-        </div>
-        <div class="column">
-          <span><a href="games.html"><button class="button">Games</button></a></span>
-           </div>
-           <div id="title">
-           <h6>infamyunblockedv5</h6>
-           </div>
-           <div class="column">
-            <span><a href="apps.html"><button class="button">Apps</button></a></span>
-             </div>
-             <div class="column">
-              <span><a href="more.html"><button class="button">More</button></a></span>
-               </div>
+
+    <div class="topbar">
+      <div class="left-buttons">
+         <a id="exit" onclick="exit()" style="display: none">
+            <span style="font-weight: bold;"><i class="fas fa-sign-out-alt"></i> Exit</span>
+         </a>
+         <a id="homebtn" href="/" class="<%= path === '/' ? 'nav-active' : 'nav-btn' %>">
+            <span><i class="fas fa-home"></i> Home</span>
+         </a>
+         <a id="games" href="/g" class="<%= path === '/g' ? 'nav-active' : 'nav-btn' %>">
+            <span><i class="fas fa-gamepad"></i> Games</span>
+         </a>
+         <a id="apps" href="/a" class="<%= path === '/a' ? 'nav-active' : 'nav-btn' %>">
+            <span><i class="fas fa-th"></i> Apps</span>
+         </a>
       </div>
-    </div>
-  </div>
-   
 
+      <form id="form" class="center-form">
+         <input autofocus autocomplete="off" class="search" id="search" placeholder="Search the web or enter a URL"
+            required />
+         <button type="submit" class="submit-button">
+            <i class="fas fa-search searchicon"></i>
+         </button>
+      </form>
 
+      <div class="right-section">
+         <a id="util" href="/u" class="<%= path === '/u' ? 'nav-active' : 'nav-btn' %>">
+            <span><i class="fas fa-wrench"></i>Utilities</span>
+         </a>
+         <a class="<%= path === '/s' ? 'nav-active' : 'nav-btn' %>" id="settings" href="/s"
+            style="display: flex; justify-content: flex-end; margin-left: auto;">
+            <span><i class="fas fa-cog"></i> Settings</span>
+         </a>
+         <a id="fullscreen" onclick="fullscreen()" style="display: none">
+            <span><i class="fas fa-expand"></i> Full Screen</span>
+         </a>
+      </div>
+   </div>
 
 
 
