@@ -118,7 +118,7 @@ iframe{
   background-color: rgb(149, 74, 219);
   border-radius: 20px;
   padding: 7px;
-  width: 800px;
+  width: 1000px;
 }
 
 
@@ -126,4 +126,7 @@ iframe{
 #title{
   background-color: rgb(135, 92, 175);
   border-radius: 20px;
+}
+#slashest{
+  margin-top: 15%;
 }
