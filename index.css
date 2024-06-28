@@ -119,6 +119,7 @@ iframe{
   border-radius: 20px;
   padding: 7px;
   width: 800px;
+    box-shadow: 0 0 10px rgb(196, 31, 214);
 }
 
 
