@@ -194,7 +194,7 @@ iframe{
   'opsz' 24
 }
 #row {
-  display: inline;
+  display: flex;
 }
 
 /* Create three equal columns that sits next to each other */
