@@ -147,12 +147,38 @@ iframe{
   box-shadow: 0 0 10px rgb(176, 32, 192)
  
 }
+#search:focus{
+  font-family: 'Press Start 2P';
+  color: white;
+  background-color: rgb(196, 31, 214);
+  height: 40px;
+  width: 500px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  padding: 5px;
+  box-shadow: 0 0 10px rgb(176, 32, 192)
+ 
+}
+#search:select{
+  font-family: 'Press Start 2P';
+  color: white;
+  background-color: rgb(196, 31, 214);
+  height: 40px;
+  width: 500px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  padding: 5px;
+  box-shadow: 0 0 10px rgb(176, 32, 192)
+ 
+}
 #searc{
   font-family: 'Press Start 2P';
   color: white;
   background-color: rgb(196, 31, 214);
   height: 50px;
-  width: 100px;
+  width: 50px;
   border-radius: 20px;
   cursor: pointer;
   border: none;
