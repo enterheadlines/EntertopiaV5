@@ -193,12 +193,12 @@ iframe{
   'GRAD' 0,
   'opsz' 24
 }
-.row {
+#row {
   display: flex;
 }
 
 /* Create three equal columns that sits next to each other */
-.column {
+#column {
   flex: 0%;
   padding: 1px;
   margin: 0px;
