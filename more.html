@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>More</title>
+        <meta name="description" content="This is the best service for your needs">
+        <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&family=Press+Start+2P&family=Trade+Winds&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+
+
+        <style>
+        
+
+        </style>
+    </head>
+    <body>
+        <br>
+
+        <div class="flex">
+          <div id="nav">
+            <div class="row">
+              <div class="column">
+             <span><a href="index.html"><button class="button">Home</button></a></span>
+              </div>
+              <div class="column">
+                <span><a href="games.html"><button class="button">Games</button></a></span>
+                 </div>
+                 <div id="title">
+                 <h6>infamyunblockedv5</h6>
+                 </div>
+                 <div class="column">
+                  <span><a href="apps.html"><button class="button">Apps</button></a></span>
+                   </div>
+                   <div class="column">
+                    <span><a href="more.html"><button class="button">More</button></a></span>
+                     </div>
+            </div>
+          </div>
+        </div>
+   <br>
+   <div class="row">
+    <div class="column">
+        <a href="credits.html"><button class="button">credits</button></a>
+    </div>
+    <div class="column">
+        <a href="updatelog.html"><button class="button">updatelog</button></a>
+    </div>
+    <div class="column">
+        <a href="tabs.html"><button class="button">tabs</button></a>
+    </div>
+    <div class="column">
+        <a href="login.html"><button class="button">login</button></a>
+    </div>
+    <div class="column">
+        <a href="settings.html"><button class="button">settings</button></a>
+    </div>
+   </div>
+   <div class="row">
+    <div class="column">
+        <a href="about.html"><button class="button">bypasses</button></a>
+    </div>
+    <div class="column">
+        <a href="sigma.html"><button class="button">secret 1</button></a>
+    </div>
+    <div class="column">
+        <a href="remember.html"><button class="button">secret 2</button></a>
+    </div>
+    <div class="column">
+        <div id="openScriptButton"><button class="button">cloaker</button></div>
+    </div>
+   </div>     
+
+
+
+
+
+
+
+
+
+
+   <script>
+    var urlObj = new window.URL(window.location.href);
+    var url = window.location;
+  
+    if (url) {
+      var win;
+  
+      document.getElementById('openScriptButton').onclick = function() {
+        if (win) {
+          win.focus();
+        } else {
+          win = window.open();
+          win.document.body.style.margin = '0';
+          win.document.body.style.height = '100vh';
+          var iframe = win.document.createElement('iframe');
+          iframe.style.border = 'none';
+          iframe.style.width = '100%';
+          iframe.style.height = '100%';
+          iframe.style.margin = '0';
+          iframe.src = url;
+          win.document.body.appendChild(iframe);
+          window.location.replace("https://google.com");
+  
+          var interval = setInterval(function() {
+            if (win.closed) {
+              clearInterval(interval);
+              win = undefined;
+            }
+          }, 500);
+        }
+      };
+    }
+  </script>
+           <script async src="https://www.googletagmanager.com/gtag/js?id=G-36EM66LHER"></script>
+           <script>
+             window.dataLayer = window.dataLayer || [];
+             function gtag(){dataLayer.push(arguments);}
+             gtag('js', new Date());
+           
+             gtag('config', 'G-36EM66LHER');
+           </script> <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
+      new Crate({
+          server: '1211576175672172636', // Infamy Network
+          channel: '1211576176607232004' // #general
+      })
+  </script>
+        </body>
+           
+</html>
