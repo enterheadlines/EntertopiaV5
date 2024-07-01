@@ -60,10 +60,10 @@ body{
     background: rgb(0, 0, 0);
     margin-bottom: 50px;
 }
-button{
+.button{
   color: white;
 }
-button {
+.button {
   font-family: "Press Start 2P";
   padding: 15px 30px;
   font-size: 18px;
@@ -82,7 +82,7 @@ display: inline;
 margin: 0px;
 margin-bottom: 10px;
 height: 200px;
-width: 200px;
+width: 230px;
 }
 .button:hover {
 background-color: #8e348e;
@@ -206,4 +206,39 @@ iframe{
 }
 #flex{
   text-align: center;
+}
+button {
+  font-family: "Press Start 2P";
+  padding: 15px 30px;
+  font-size: 18px;
+background-color: #ad47c6;
+color: #ffffff;
+border: none;
+border-radius: 10px;
+cursor: pointer;
+transition: background-color 0.3s, transform 0.3s;
+font-weight: bold;
+letter-spacing: 1px;
+text-transform: uppercase;
+box-shadow: 0 0 10px rgb(196, 31, 214);
+text-decoration: none;
+display: inline;
+margin: 0px;
+margin-bottom: 10px;
+height: 200px;
+width: 230px;
+}
+button:hover {
+background-color: #8e348e;
+transform: scale(1.1);
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
 }
