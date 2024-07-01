@@ -81,8 +81,8 @@ text-decoration: none;
 display: inline;
 margin: 0px;
 margin-bottom: 10px;
-height: 100px;
-width: 100px;
+height: 200px;
+width: 200px;
 }
 .button:hover {
 background-color: #8e348e;
