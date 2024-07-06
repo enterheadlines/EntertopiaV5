@@ -128,7 +128,9 @@ iframe{
 
 
 #title{
-  padding: 10px;
+  height: 30px;
+  width: 70px;
+  padding: 5px;
   background-color: rgb(196, 31, 214);
   border-radius: 20px;
   box-shadow: 0 0 10px rgb(176, 32, 192)
