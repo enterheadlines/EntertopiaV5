@@ -244,6 +244,7 @@ transform: scale(1.1);
   }
 }
 #interstellarsucks{
+  text-align: center;
   background: linear-gradient(-45deg, #9e459b, #71c4a0, #f80faf7a, #195f8e);
   color: white;
   border-radius: 20px;
