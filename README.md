@@ -1,4 +1,3 @@
-# infamyunblockedv5
-Infamyunblockedv5 is the best game/proxy site ever
-v5 is still in early development
+# Entertopia V5
+V5 is very early in development so nothing works rn so dont fork this ok
 https://discord.gg/Ajnsq7S3cr
