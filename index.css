@@ -114,12 +114,14 @@ iframe{
 	}
 }
 #nav{
- margin: none;
+  margin-top: 1px;
+  margin-left: 17%;
   background-color: rgb(176, 28, 176);
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-radius: 20px;
   padding: 7px;
+  width: 800px;
     box-shadow: 0 0 10px rgb(196, 31, 214);
+  position: fixed;
 }
 
 
@@ -129,7 +131,8 @@ iframe{
   padding-right: 20px;
   background-color: rgb(196, 31, 214);
   border-radius: 20px;
-  box-shadow: 0 0 10px rgb(176, 32, 192)
+  box-shadow: 0 0 10px rgb(176, 32, 192);
+  position: fixed;
 }
 #slashest{
   margin-top: 5%;
