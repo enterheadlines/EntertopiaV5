@@ -81,8 +81,6 @@ text-decoration: none;
 display: inline;
 margin: 0px;
 margin-bottom: 10px;
-height: 200px;
-width: 230px;
 }
 .button:hover {
 background-color: #8e348e;
@@ -116,12 +114,11 @@ iframe{
 	}
 }
 #nav{
-  margin-top: 1px;
-  margin-left: 17%;
+ margin: none;
   background-color: rgb(176, 28, 176);
-  border-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   padding: 7px;
-  width: 800px;
     box-shadow: 0 0 10px rgb(196, 31, 214);
 }
 
