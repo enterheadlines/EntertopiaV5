@@ -121,7 +121,7 @@ iframe{
   padding: 7px;
   width: 800px;
     box-shadow: 0 0 10px rgb(196, 31, 214);
-  position: fixed;
+
 }
 
 
@@ -132,7 +132,7 @@ iframe{
   background-color: rgb(196, 31, 214);
   border-radius: 20px;
   box-shadow: 0 0 10px rgb(176, 32, 192);
-  position: fixed;
+
 }
 #slashest{
   margin-top: 5%;
